@@ -14,4 +14,4 @@ RUN git clone https://aur.archlinux.org/yay.git \
     && makepkg -Si \
     && makepkg -i --noconfirm 
 RUN yay -S --noconfirm qemu-user-static-bin 
-CMD ["/bin/bash"]
+RUN sudo rm -rf /home/alarm
