@@ -6,7 +6,7 @@ on:
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
-    runs-on: manjaro-arm64
+    runs-on: ARM64
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
